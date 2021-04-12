@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 静态工厂方法 -->
+    <bean class="org.example.core.factory.StaticFactory"
+          factory-method="createInstance"
+          id="staticFactoryBeanCreatedInstance">
+        <constructor-arg name="result" value="A static factory created bean!"/>
+    </bean>
+
+    <!-- 工厂的实例 -->
+    <bean class="org.example.core.factory.InstanceFactory"
+          id="instanceFactory"/>
+    <!-- 工厂实例通过实例方法生产出一个bean -->
+    <bean factory-bean="instanceFactory"
+          factory-method="instanceFactoryMethod"
+          id="instanceFactoryBeanCreatedInstance">
+        <constructor-arg name="result" value="A instance factory bean created bean!"/>
+    </bean>
+</beans>

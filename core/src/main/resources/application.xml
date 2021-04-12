@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="application-extra.xml"/>
+    <import resource="application-constructor.xml"/>
+    <import resource="application-factory.xml"/>
+    <import resource="application-setter.xml"/>
+
+    <bean id="bean1" name="bean1" class="org.example.core.beans.Bean1"/>
+    <bean id="bean2" name="bean2" class="org.example.core.beans.Bean2"/>
+
+    <alias name="bean1" alias="bean12"/>
+</beans>
