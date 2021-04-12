@@ -2,15 +2,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-    https://www.springframework.org/schema/beans/spring-beans.xsd">
+    https://www.springframework.org/schema/beans/spring-beans.xsd"
+    default-init-method="init">
 
     <import resource="application-extra.xml"/>
     <import resource="application-constructor.xml"/>
     <import resource="application-factory.xml"/>
     <import resource="application-setter.xml"/>
+    <import resource="application-method.xml"/>
+    <import resource="application-scope.xml"/>
+    <import resource="application-lifecycle.xml"/>
 
     <bean id="bean1" name="bean1" class="org.example.core.beans.Bean1"/>
     <bean id="bean2" name="bean2" class="org.example.core.beans.Bean2"/>
 
     <alias name="bean1" alias="bean12"/>
+
+    <bean class="org.example.core.aware.MyLoadTimeWeaverAware" id="loadTimeWeaverAware"/>
 </beans>

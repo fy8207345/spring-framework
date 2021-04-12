@@ -4,6 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- 测试import -->
-    <bean class="org.example.core.beans.Extra" id="extra" lazy-init="true"/>
+    <!-- 根据方法注入 -->
+
+    <bean class="org.example.core.method.MyCommand" id="myCommand" scope="prototype">
+    </bean>
+
+    <bean class="org.example.core.method.CommandManager" id="commandManager">
+        <lookup-method name="createCommand" bean="myCommand"/>
+    </bean>
 </beans>
