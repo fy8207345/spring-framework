@@ -6,7 +6,7 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 通过set方法注入实例 -->
-    <bean class="org.example.core.postprocessors.CustomPostProcessor" id="customPostProcessor"/>
-    <bean class="org.example.core.postprocessors.CustomPostProcessor2" id="customPostProcessor2"/>
-    <bean class="org.example.core.postprocessors.CustomBeanFactoryPostProcessor" id="customBeanFactoryPostProcessor"/>
+    <bean class="org.example.core.xml.postprocessors.CustomPostProcessor" id="customPostProcessor"/>
+    <bean class="org.example.core.xml.postprocessors.CustomPostProcessor2" id="customPostProcessor2"/>
+    <bean class="org.example.core.xml.postprocessors.CustomBeanFactoryPostProcessor" id="customBeanFactoryPostProcessor"/>
 </beans>

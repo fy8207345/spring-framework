@@ -5,5 +5,5 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 测试import -->
-    <bean class="org.example.core.beans.Extra" id="extra" lazy-init="true"/>
+    <bean class="org.example.core.xml.beans.Extra" id="extra" lazy-init="true"/>
 </beans>

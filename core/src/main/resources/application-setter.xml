@@ -6,14 +6,14 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 通过set方法注入实例 -->
-    <bean class="org.example.core.setter.Setter1" id="setter1">
+    <bean class="org.example.core.xml.setter.Setter1" id="setter1">
         <property name="setter2" ref="setter2"/>
     </bean>
-    <bean class="org.example.core.setter.Setter2" id="setter2">
+    <bean class="org.example.core.xml.setter.Setter2" id="setter2">
         <property name="setter1" ref="setter1"/>
     </bean>
 
     <!-- p命名空间来设置属性 -->
-    <bean class="org.example.core.setter.Setter1" id="setter1Byp"
+    <bean class="org.example.core.xml.setter.Setter1" id="setter1Byp"
           p:setter2-ref="setter2"/>
 </beans>

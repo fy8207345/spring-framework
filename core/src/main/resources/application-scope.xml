@@ -6,8 +6,8 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean class="org.example.core.scope.Singleton" id="singleton"/>
+    <bean class="org.example.core.xml.scope.Singleton" id="singleton"/>
 
     <!-- 每次创建一个实例 -->
-    <bean class="org.example.core.scope.Prototype" id="prototype" scope="prototype"/>
+    <bean class="org.example.core.xml.scope.Prototype" id="prototype" scope="prototype"/>
 </beans>

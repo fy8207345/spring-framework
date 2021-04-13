@@ -19,10 +19,10 @@
 
     <context:annotation-config/>
 
-    <bean id="bean1" name="bean1" class="org.example.core.beans.Bean1"/>
-    <bean id="bean2" name="bean2" class="org.example.core.beans.Bean2"/>
+    <bean id="bean1" name="bean1" class="org.example.core.xml.beans.Bean1"/>
+    <bean id="bean2" name="bean2" class="org.example.core.xml.beans.Bean2"/>
 
     <alias name="bean1" alias="bean12"/>
 
-    <bean class="org.example.core.aware.MyLoadTimeWeaverAware" id="loadTimeWeaverAware"/>
+    <bean class="org.example.core.xml.aware.MyLoadTimeWeaverAware" id="loadTimeWeaverAware"/>
 </beans>

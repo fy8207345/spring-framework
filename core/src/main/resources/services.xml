@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="service1" class="org.example.core.beans.Service1"/>
-    <bean class="org.example.core.beans.Service2" id="service2"/>
+    <bean id="service1" class="org.example.core.xml.beans.Service1"/>
+    <bean class="org.example.core.xml.beans.Service2" id="service2"/>
 </beans>

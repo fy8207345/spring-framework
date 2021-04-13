@@ -5,5 +5,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.example.core.lifecycle.LifecycleBean" id="lifecycleBean"/>
+    <bean class="org.example.core.xml.lifecycle.LifecycleBean" id="lifecycleBean"/>
 </beans>

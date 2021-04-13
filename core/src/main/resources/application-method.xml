@@ -6,10 +6,10 @@
 
     <!-- 根据方法注入 -->
 
-    <bean class="org.example.core.method.MyCommand" id="myCommand" scope="prototype">
+    <bean class="org.example.core.xml.method.MyCommand" id="myCommand" scope="prototype">
     </bean>
 
-    <bean class="org.example.core.method.CommandManager" id="commandManager">
+    <bean class="org.example.core.xml.method.CommandManager" id="commandManager">
         <lookup-method name="createCommand" bean="myCommand"/>
     </bean>
 </beans>

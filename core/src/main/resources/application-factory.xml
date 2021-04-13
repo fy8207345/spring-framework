@@ -5,14 +5,14 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 静态工厂方法 -->
-    <bean class="org.example.core.factory.StaticFactory"
+    <bean class="org.example.core.xml.factory.StaticFactory"
           factory-method="createInstance"
           id="staticFactoryBeanCreatedInstance">
         <constructor-arg name="result" value="A static factory created bean!"/>
     </bean>
 
     <!-- 工厂的实例 -->
-    <bean class="org.example.core.factory.InstanceFactory"
+    <bean class="org.example.core.xml.factory.InstanceFactory"
           id="instanceFactory"/>
     <!-- 工厂实例通过实例方法生产出一个bean -->
     <bean factory-bean="instanceFactory"

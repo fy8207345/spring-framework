@@ -5,11 +5,11 @@
     https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 通过构造方法注入实例 -->
-    <bean class="org.example.core.constructor.ByConstructor1" id="byConstructor1">
+    <bean class="org.example.core.xml.constructor.ByConstructor1" id="byConstructor1">
         <constructor-arg name="name" value="value passed by xml config"/>
     </bean>
 
-    <bean class="org.example.core.constructor.ByConstructor2" id="byConstructor2" depends-on="byConstructor1">
+    <bean class="org.example.core.xml.constructor.ByConstructor2" id="byConstructor2" depends-on="byConstructor1">
         <constructor-arg name="byConstructor1" ref="byConstructor1"/>
     </bean>
 </beans>
