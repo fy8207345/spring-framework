@@ -16,6 +16,8 @@
     <import resource="application-scope.xml"/>
     <import resource="application-lifecycle.xml"/>
     <import resource="application-beanpostprocessor.xml"/>
+    <import resource="application-validation.xml"/>
+    <import resource="application-aop.xml"/>
 
     <context:annotation-config/>
 
